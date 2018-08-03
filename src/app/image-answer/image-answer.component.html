@@ -1,14 +1,16 @@
 <div class="container">
     <div class="search">
-        <input type="text"
-        (keydown.enter)="fetchImage()" (ngModel)="aswer">
-        <button (click)="fetchImage()">
-            Ask me
-        </button>
-  
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="Answer...!!" (keydown.enter)="fetchImage()" (ngModel)="aswer">
+      </mat-form-field>
+      <button 
+        (click)="fetchImage()"
+        mat-raised-button
+        color="primary">
+        search
+      </button>
     </div>
   </div>
-  
   
   <img width="600px"
        *ngIf="(data$ | async) as data"

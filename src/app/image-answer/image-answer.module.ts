@@ -4,10 +4,13 @@ import { CommonModule } from '@angular/common';
 import { ImageAnswerComponent } from './image-answer.component';
 import { ImageAnswerService } from './image-answer.service';
 
+import { MaterialModule } from './../material/material.module';
+
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ],
   declarations: [
     ImageAnswerComponent,
